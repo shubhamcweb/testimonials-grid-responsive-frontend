@@ -21,7 +21,7 @@ article {
 .quote-img {
     width: 120px;
     position: absolute;
-    right: 6%;
+    right: 8%;
     top: 0;
     z-index: -1;
 }
@@ -104,15 +104,9 @@ h3 {
     color: hsl(228, 45%, 44%);
 }
 
-@media screen and (min-width: 640px) {
-    .quote-img {
-        right: 12%;
-    }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     main {
-        padding: 8vh 24px 48px 24px;
+        padding: 14vh 24px 48px 24px;
     }
     
     article {
@@ -120,11 +114,13 @@ h3 {
     }
 
     .quote-img {
-        right: 8%;
+        right: 16%;
     }
 
     .testimonial-container {
         display: flex;
+        margin: auto;
+        max-width: 1100px;
     }
 
     .main-left {
@@ -161,20 +157,5 @@ h3 {
 
     .testimonial-4 {
         flex-basis: 70%;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    main {
-        padding: 16vh 24px 48px 24px;
-    }
-
-    .testimonial-container {
-        max-width: 1100px;
-        margin: auto;
-    }
-
-    .quote-img {
-        right: 16%;
     }
 }
